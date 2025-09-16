@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página de Casa</title>
+</head>
+<body>
+    <h1>¡Bienvenido a mi página de casa!</h1>
+    <p>Este es un ejemplo de cómo crear una página web simple con Flask.</p>
+</body>
+</html>from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return render_template('index.html')
+
+if __name__ == '__main__':
+    app.run(debug=True)Estafahttp://127.0.0.1:5000/:index.html.
+
